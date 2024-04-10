@@ -9,8 +9,8 @@ services:
     environment:
       - MYSQL_ALLOW_EMPTY_PASSWORD=1
       - MYSQL_DATABASE=local
-    expose:
-      - 3306
+    ports:
+      - 3307:3306
   phpmyadmin:
     image: phpmyadmin
     restart: always
